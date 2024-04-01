@@ -11,6 +11,8 @@ class ExpenseForm extends StatefulWidget {
 }
 
 class _ExpenseFormState extends State<ExpenseForm> {
+  bool showTotal = true;
+
   var title = TextEditingController();
   var amount = TextEditingController();
   DateTime seDate = DateTime.utc(1970, 1, 1);
@@ -35,7 +37,7 @@ class _ExpenseFormState extends State<ExpenseForm> {
         margin: EdgeInsets.only(
             left: 10,
             right: 10,
-            bottom: MediaQuery.of(context).viewInsets.bottom + 10),
+            bottom: MediaQuery.of(context).viewInsets.bottom + 50),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [

@@ -58,7 +58,7 @@ class EXListWidget extends StatelessWidget {
 // third child
                     Container(
                       child: IconButton(
-                          onPressed: () {},
+                          onPressed: () {deleteExpense(index)},
                           icon: Icon(Icons.delete),
                           color: Colors.red),
                     ),

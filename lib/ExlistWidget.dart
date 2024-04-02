@@ -11,7 +11,7 @@ class EXListWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: 400,
+        height: 500,
 
         child: ListView.builder(
           itemCount: allExpenses.length,

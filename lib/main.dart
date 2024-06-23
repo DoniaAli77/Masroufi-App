@@ -116,7 +116,6 @@ class mainPageHook extends HookWidget {
   @override
   Widget build(BuildContext context) {
 final ValueNotifier<List<expense>> allExpenses = useState<List<expense>>([]);
-    var context = useContext();
     void addnewExpense(
         {required String t, required double a, required DateTime d}) {
       allExpenses.value = [
@@ -165,7 +164,7 @@ final ValueNotifier<List<expense>> allExpenses = useState<List<expense>>([]);
                 showModalBottomSheet(
                     context: context,
                     builder: (b) {
-                      return ExpenseForm(addnew: addnewExpense);
+                      return ExpenseForm(addnew: addnewExpense); //ExpenseFormHook(addnew: addnewExpense)
                     });
               },
               icon: Icon(Icons.add))
